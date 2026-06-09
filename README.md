@@ -58,3 +58,15 @@ Here is what the vehicle scheduler outputs look like when you run the program:
 ![Vehicle Scheduler Output 1](assets/vehicle_scheduler1.png)
 
 ![Vehicle Scheduler Output 2](assets/vechcle_scheduler2.png)
+
+---
+
+# System Logging
+
+Both the Notification and Vehicle Scheduler systems use a built-in "logger" to keep track of what's happening behind the scenes. 
+
+## How Logging Works
+
+1. **Tracking Progress**: As the program runs, it automatically creates checkpoints (for example, recording when it is "Authenticating..." or "Fetching data...").
+2. **Remote Storage**: Instead of just printing these updates to your local screen, it securely sends these log messages over the internet to a central logging server.
+3. **Catching Errors**: If something goes wrong—like a failed login or bad data—the logger catches the error and immediately sends an "error alert" to the remote server. This allows developers to easily look up what went wrong and fix the problem without needing to ask the user.
