@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "npm run build && npm run start"
   },
   "repository": {
     "type": "git",
@@ -13,9 +16,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/2PieRadian/2300321530154/issues"
   },
-  "homepage": "https://github.com/2PieRadian/2300321530154#readme"
+  "homepage": "https://github.com/2PieRadian/2300321530154#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
