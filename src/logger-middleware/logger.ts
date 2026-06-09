@@ -1,5 +1,5 @@
-import { validateLogPackageName } from "../utils/validations.js";
-import { LEVELS, STACKS } from "../constants/logger.js";
+import { validateLogPackageName } from "./utils/validations.js";
+import { LEVELS, STACKS } from "./constants/logger.js";
 
 const LOG_API = "http://4.224.186.213/evaluation-service/logs";
 
